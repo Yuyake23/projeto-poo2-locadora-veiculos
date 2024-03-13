@@ -1,3 +1,5 @@
+package locadora;
+
 public class Endereco {
     private Long id;
     private String rua;

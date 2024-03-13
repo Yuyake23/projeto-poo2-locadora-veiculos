@@ -1,3 +1,5 @@
+package locadora;
+
 public enum TipoVeiculo {
     PEQUENO(100),
     MEDIO(150),

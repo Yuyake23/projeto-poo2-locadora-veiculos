@@ -1,4 +1,4 @@
-import java.util.Objects;
+package locadora;
 
 public abstract class Pessoa {
     protected Long id;

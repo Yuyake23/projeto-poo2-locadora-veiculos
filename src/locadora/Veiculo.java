@@ -1,3 +1,5 @@
+package locadora;
+
 import java.util.Objects;
 
 public class Veiculo {
