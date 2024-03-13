@@ -1,21 +1,21 @@
 import java.util.Objects;
 
 public class Pessoa {
-    private String id;
-    private String nome;
-    private Endereco endereco;
+    protected Long id;
+    protected String nome;
+    protected Endereco endereco;
 
-    public Pessoa(String id, String nome, Endereco endereco) {
+    public Pessoa(Long id, String nome, Endereco endereco) {
         this.id = id;
         this.nome = nome;
         this.endereco = endereco;
     }
 
-    public String getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

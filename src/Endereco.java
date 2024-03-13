@@ -1,14 +1,24 @@
 public class Endereco {
+    private Long id;
     private String rua;
     private String cidade;
     private String estado;
     private String cep;
 
-    public Endereco(String rua, String cidade, String estado, String cep) {
+    public Endereco(Long id, String rua, String cidade, String estado, String cep) {
+        this.id = id;
         this.rua = rua;
         this.cidade = cidade;
         this.estado = estado;
         this.cep = cep;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getRua() {
@@ -46,10 +56,12 @@ public class Endereco {
     @Override
     public String toString() {
         return "Endereco{" +
-                "rua='" + rua + '\'' +
+                "id='" + id + '\'' +
+                ", rua='" + rua + '\'' +
                 ", cidade='" + cidade + '\'' +
                 ", estado='" + estado + '\'' +
                 ", cep='" + cep + '\'' +
                 '}';
     }
+
 }
