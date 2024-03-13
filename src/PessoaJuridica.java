@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class PessoaJuridica extends Pessoa {
     private String cnpj;
 
@@ -12,6 +14,22 @@ public class PessoaJuridica extends Pessoa {
 
     public void setCnpj(String cnpj) {
         this.cnpj = cnpj;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+
+        if (o instanceof PessoaJuridica that) {
+            return Objects.equals(id, that.id) || Objects.equals(cnpj, that.cnpj);
+        }
+        return false;
+
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, cnpj);
     }
 
     @Override
