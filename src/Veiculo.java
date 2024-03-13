@@ -2,13 +2,12 @@ import java.util.Objects;
 
 public class Veiculo {
     private Long id;
-    private static Long proximoId;
     private String placa;
     private String nome;
     private TipoVeiculo tipo;
 
-    public Veiculo(String placa, String nome, TipoVeiculo tipo) {
-        id = proximoId++;
+    public Veiculo(Long id, String placa, String nome, TipoVeiculo tipo) {
+        this.id = id;
         this.placa = placa;
         this.nome = nome;
         this.tipo = tipo;
@@ -51,12 +50,12 @@ public class Veiculo {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Veiculo veiculo = (Veiculo) o;
-        return id == veiculo.id;
+        return id == veiculo.id || placa.equals(veiculo.placa);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id);
+        return Objects.hash(id, placa);
     }
 
     @Override
