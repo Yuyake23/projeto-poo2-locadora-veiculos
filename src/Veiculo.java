@@ -45,6 +45,10 @@ public class Veiculo {
         this.tipo = tipo;
     }
 
+    public double getValorDiaria(){
+        return this.tipo.getValorDiaria();
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
