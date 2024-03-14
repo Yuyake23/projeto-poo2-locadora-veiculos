@@ -1,6 +1,6 @@
 package locadora;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.Objects;
 
@@ -9,11 +9,11 @@ public class Locacao {
     private Long id;
     private Pessoa pessoa;
     private Veiculo veiculo;
-    private LocalDate dataLocacao;
-    private LocalDate dataDevolucao;
+    private LocalDateTime dataLocacao;
+    private LocalDateTime dataDevolucao;
     private Endereco endereco;
 
-    public Locacao(Long id, Pessoa pessoa, Veiculo veiculo, LocalDate dataEntrada, LocalDate dataSaida, Endereco endereco) {
+    public Locacao(Long id, Pessoa pessoa, Veiculo veiculo, LocalDateTime dataEntrada, LocalDateTime dataSaida, Endereco endereco) {
         this.id = id;
         this.pessoa = pessoa;
         this.veiculo = veiculo;
@@ -22,7 +22,7 @@ public class Locacao {
         this.endereco = endereco;
     }
 
-    public Locacao(Long id, Pessoa pessoa, Veiculo veiculo, LocalDate dataEntrada, Endereco endereco) {
+    public Locacao(Long id, Pessoa pessoa, Veiculo veiculo, LocalDateTime dataEntrada, Endereco endereco) {
         this.id = id;
         this.pessoa = pessoa;
         this.veiculo = veiculo;
@@ -54,19 +54,19 @@ public class Locacao {
         this.veiculo = veiculo;
     }
 
-    public LocalDate getDataLocacao() {
+    public LocalDateTime getDataLocacao() {
         return dataLocacao;
     }
 
-    public void setDataLocacao(LocalDate dataLocacao) {
+    public void setDataLocacao(LocalDateTime dataLocacao) {
         this.dataLocacao = dataLocacao;
     }
 
-    public LocalDate getDataDevolucao() {
+    public LocalDateTime getDataDevolucao() {
         return dataDevolucao;
     }
 
-    public void setDataDevolucao(LocalDate dataDevolucao) {
+    public void setDataDevolucao(LocalDateTime dataDevolucao) {
         this.dataDevolucao = dataDevolucao;
     }
 
