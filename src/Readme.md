@@ -25,3 +25,4 @@ Durante o curso, exploramos diversos conceitos da programação orientada a obje
 ### Dificuldade de Aplicação
 
 - **Open/Closed Principle (OCP)**: Encontrei certa dificuldade em aplicar o princípio Aberto/Fechado. Embora entendesse o conceito de estender comportamentos sem modificar o código existente.
+- 
