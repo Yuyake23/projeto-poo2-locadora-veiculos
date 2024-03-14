@@ -1,6 +1,6 @@
 # Projeto Locadora de veículos
 
-![Logo do Projeto](src/res/Diagrama-LocateCar-ada.drawio.svg)
+![Logo do Projeto](https://github.com/Yuyake23/projeto-poo2-locadora-veiculos)
 
 ## Descrição
 
