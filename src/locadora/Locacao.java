@@ -9,6 +9,7 @@ public class Locacao {
     private Long id;
     private Pessoa pessoa;
     private Veiculo veiculo;
+    // RN3: Os aluguéis e devoluções terão o local, data e horário;
     private LocalDateTime dataLocacao;
     private LocalDateTime dataDevolucao;
     private Endereco endereco;
