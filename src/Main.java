@@ -76,6 +76,8 @@ public class Main {
     }
 
     public static boolean alugarVeiculo(Set<Locacao> locacoes, Veiculo veiculo, Pessoa pessoa, Endereco endereco) {
+        // RN5: Os veículos que estiverem alugados não poderão estar disponíveis;
+        // Vai dar verdadeiro se tiver alugado
         boolean alugado = locacoes.stream()
                 .filter(l -> l.getVeiculo().equals(veiculo))
                 .anyMatch(l -> l.getDataDevolucao() == null);
