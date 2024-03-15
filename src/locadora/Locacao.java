@@ -79,6 +79,10 @@ public class Locacao {
         this.endereco = endereco;
     }
 
+    // RN4: Considere aluguel em horas quebradas como uma diária completa.
+    // Exemplo: uma devolução de um veículo alugado no dia 25 de janeiro às 15h30 será cobrado
+    // uma (1) diária até dia 26 de janeiro às 15h30, a partir desse horário já serão cobradas
+    // duas (2) diárias e assim por diante.
     public int quantidadeDeDias() {
         return (int) Math.ceil((double) ChronoUnit.MINUTES.between(dataLocacao, dataDevolucao) / 60.0 / 24.0);
     }
