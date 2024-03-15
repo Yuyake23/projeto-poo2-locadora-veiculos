@@ -12,6 +12,8 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
+        // RN1: Os veículos não podem ser repetidos; Pode utilizar a placa como identificador de unicidade;
+        // Os veículo não serão repetidos pois implementamos o equals e estamos utilizando u Set
         Set<Veiculo> veiculos = new HashSet<>();
         Set<Pessoa> pessoas = new HashSet<>();
         Set<Locacao> locacoes = new HashSet<>();
