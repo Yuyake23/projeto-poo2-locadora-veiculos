@@ -1,5 +1,6 @@
 package locadora;
 
+// RN2: Tipos de veículos que serão considerados: PEQUENO, MEDIO e SUV;
 public enum TipoVeiculo {
     PEQUENO(100),
     MEDIO(150),
