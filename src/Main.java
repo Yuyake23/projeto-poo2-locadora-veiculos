@@ -13,8 +13,11 @@ import java.util.stream.Collectors;
 public class Main {
     public static void main(String[] args) {
         // RN1: Os veículos não podem ser repetidos; Pode utilizar a placa como identificador de unicidade;
-        // Os veículo não serão repetidos pois implementamos o equals e estamos utilizando u Set
+        // Os veículo não serão repetidos pois implementamos o equals e estamos utilizando o Set
         Set<Veiculo> veiculos = new HashSet<>();
+        // RN6: Clientes não podem estar duplicados;
+        // Considerar CPF (Pessoa Física) e CNPJ (Pessoa Jurídica) como identificadores de unicidade;
+        // Os veículo não serão repetidos pois implementamos o equals e estamos utilizando o Set
         Set<Pessoa> pessoas = new HashSet<>();
         Set<Locacao> locacoes = new HashSet<>();
 
