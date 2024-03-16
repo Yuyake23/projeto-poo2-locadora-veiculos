@@ -70,6 +70,18 @@ public class Main {
         devolverVeiculo(locacoes, corola);
         System.out.println();
         devolverVeiculo(locacoes, fiat);
+
+        System.out.println("""
+                Esta aplicação foi desenvolvida no programa Santander Coders aplicado pela Ada Tech no módulo de Programação Orientada II a Objetos com os objetivos de fixação de conteúdo e avaliação.
+
+                Professor: Brunno Nogueira
+                Desenvolvedores:
+                    Bruno Samuel da Silva;
+                    Fabiola Santana dos Santos;
+                    Rafael Santos Isidoro; e
+                    Wagner Costa Thomazini.
+                Turma: Santander Coders 2023 | 2º Semestre - Java (1)|#1111
+                Data: 15 de março de 2024.""");
     }
 
     public static Set<? extends Veiculo> buscarVeiculos(Set<? extends Veiculo> veiculos, String str) {
@@ -115,5 +127,4 @@ public class Main {
             return false;
         }
     }
-
 }
