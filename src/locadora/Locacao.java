@@ -88,7 +88,20 @@ public class Locacao {
     }
 
     public double valorAPagar() {
-        return this.quantidadeDeDias() * this.veiculo.getValorDiaria();
+        return this.quantidadeDeDias() * this.veiculo.getValorDiaria() * (1 - calcularTaxaDesconto());
+    }
+
+    // RN7: Regras de devolução:
+    // Caso o cliente pessoa física tenha ficado com o carro mais que 5 diárias terá direito a 5% de desconto.
+    // Caso o cliente pessoa jurídica tenha ficado com o carro mais que 3 diárias terá direito a 10% de desconto.
+    public double calcularTaxaDesconto() {
+        if (pessoa instanceof PessoaFisica && this.quantidadeDeDias() > 5) {
+            return .05;
+        }
+        if (pessoa instanceof PessoaJuridica && this.quantidadeDeDias() > 3) {
+            return .1;
+        }
+        return 0;
     }
 
     @Override
